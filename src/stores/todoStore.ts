@@ -20,7 +20,6 @@ export const useTodoStore = defineStore("todo", {
     filterMode: "all",
   }),
   getters: {
-    // statusTodos: (state) => state.todos.fiter((todo) => todo.completed),
     statusTodos: (state) => state.todos.filter((todo) => todo.status),
     activeTodos: (state) => state.todos.filter((todo) => !todo.status),
     activeCountTodos: (state) =>
